@@ -18,9 +18,7 @@ class _ExampleRootPageState extends State<ExampleRootPage> {
       body: ListView.builder(
         itemCount: 100,
         itemBuilder: (context, index) => ListTile(
-          onTap: () {
-            RouterUtil.to(ChildPage(title: '示例详情页 - ${index + 1}'));
-          },
+          onTap: () {},
           title: Text('列表 - ${index + 1}'),
         ),
       ),

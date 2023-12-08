@@ -33,7 +33,7 @@ class _HomeRootPageState extends State<HomeRootPage> {
               onPressed: () {
                 RouterUtil.to(
                   const WebviewPage(url: 'https://main.m.taobao.com'),
-                  transition: PageTransitionType.rightToLeft,
+                  noTransition: true,
                 );
               },
               child: const Text('淘宝'),
@@ -45,7 +45,7 @@ class _HomeRootPageState extends State<HomeRootPage> {
                     url: 'https://www.bing.com',
                     enableNavIntercept: true,
                   ),
-                  transition: PageTransitionType.fade,
+                  noTransition: true,
                 );
               },
               child: const Text('Bing搜索'),
